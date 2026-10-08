@@ -1,0 +1,16 @@
+#guide-dialog { width: min(760px,calc(100% - 32px)); max-width: 760px; padding: 24px; }
+#guide-dialog[open] { display: flex; flex-direction: column; gap: 16px; max-height: 88vh; }
+#guide-dialog .dialog-heading { margin: 0; gap: 16px; }
+#guide-dialog .dialog-heading h2 { font-size: 22px; }
+#guide-dialog .dialog-close { white-space: nowrap; }
+#guide-dialog .guide-intro { margin: 0; font-size: 14px; color: var(--text-secondary); }
+#guide-content { display: block; width: 100%; min-height: 260px; height: 46vh; resize: none; border: 1px solid var(--line); border-radius: 8px; background: #f8f9fc; color: var(--text-body); padding: 18px; font: 14px/1.8 "Malgun Gothic",system-ui,sans-serif; overflow: auto; white-space: pre-wrap; flex: 1 1 auto; }
+.guide-actions { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.guide-actions p { margin: 0; font-size: 13px; color: var(--text-caption); }
+#guide-dialog #save { flex: 0 0 auto; }
+@media(max-width:720px) {
+  #guide-dialog { padding: 18px; }
+  #guide-dialog .dialog-heading h2 { font-size: 20px; }
+  #guide-content { padding: 13px; min-height: 200px; }
+  .guide-actions { flex-direction: column; align-items: stretch; gap: 12px; }
+}
