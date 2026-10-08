@@ -4,7 +4,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/2026-10-08-capcut-bridge-v1.2.0.html"
+      "destination": "/2026-10-08-capcut-bridge-v1.2.1.html"
     }
   ],
   "headers": [
